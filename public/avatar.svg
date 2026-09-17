@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1e"/>
+      <stop offset="50%" stop-color="#0e172a"/>
+      <stop offset="100%" stop-color="#061226"/>
+    </linearGradient>
+    <linearGradient id="cyberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#040711" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" rx="32" fill="url(#bgGrad)"/>
+  <circle cx="300" cy="260" r="220" fill="url(#halo)"/>
+
+  <!-- Futuristic Tech Grid Lines -->
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.15">
+    <line x1="50" y1="300" x2="550" y2="300"/>
+    <line x1="300" y1="50" x2="300" y2="550"/>
+    <circle cx="300" cy="260" r="160" fill="none" stroke-dasharray="6,6"/>
+    <circle cx="300" cy="260" r="200" fill="none" stroke-dasharray="3,9"/>
+  </g>
+
+  <!-- Silhouette & Tech Headset / Avatar -->
+  <g transform="translate(300, 270)">
+    <!-- Shoulders / Torso -->
+    <path d="M-150 230 C -140 130, -90 90, 0 90 C 90 90, 140 130, 150 230 Z" fill="#15203b" stroke="url(#cyberGlow)" stroke-width="3"/>
+    <path d="M-70 110 L0 170 L70 110" fill="none" stroke="#06b6d4" stroke-width="3" opacity="0.6"/>
+
+    <!-- Neck -->
+    <rect x="-35" y="40" width="70" height="70" rx="12" fill="#1e293b" opacity="0.9"/>
+
+    <!-- Head & Face -->
+    <path d="M-65 -40 C-65 -110, 65 -110, 65 -40 C65 20, 45 65, 0 65 C-45 65, -65 20, -65 -40 Z" fill="#1e293b" stroke="url(#cyberGlow)" stroke-width="2.5"/>
+
+    <!-- Hair / Tech Silhouette -->
+    <path d="M-70 -45 C-70 -130, 30 -140, 75 -70 C60 -60, 40 -85, -10 -85 C-50 -85, -65 -60, -70 -45 Z" fill="#0f172a"/>
+
+    <!-- Tech Visor / Glasses Accent -->
+    <rect x="-48" y="-35" width="96" height="24" rx="6" fill="#0b1329" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="-38" y1="-23" x2="38" y2="-23" stroke="#06b6d4" stroke-width="3"/>
+    <circle cx="28" cy="-23" r="3" fill="#38bdf8"/>
+    <circle cx="-28" cy="-23" r="3" fill="#6366f1"/>
+
+    <!-- Glowing Tech Core -->
+    <circle cx="0" cy="140" r="16" fill="#080c18" stroke="#06b6d4" stroke-width="2.5"/>
+    <circle cx="0" cy="140" r="7" fill="#38bdf8"/>
+  </g>
+
+  <!-- Corner Tech HUD Accents -->
+  <g stroke="#06b6d4" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 40 70 L 40 40 L 70 40"/>
+    <path d="M 560 70 L 560 40 L 530 40"/>
+    <path d="M 40 530 L 40 560 L 70 560"/>
+    <path d="M 560 530 L 560 560 L 530 560"/>
+  </g>
+
+  <!-- Monogram & Tag -->
+  <text x="300" y="540" text-anchor="middle" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="16" letter-spacing="4" font-weight="600">WELQUIM PANOGALING // DEV</text>
+</svg>
