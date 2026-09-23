@@ -15,7 +15,10 @@ import {
   Headset
 } from 'lucide-react';
 import { servicesData } from '../data/services';
+<<<<<<< HEAD
 import { BrandIcon } from './BrandIcons';
+=======
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
 
 const serviceIcons: Record<string, React.FC<{ className?: string }>> = {
   Share2,
@@ -70,8 +73,13 @@ export const Services: React.FC = () => {
                 <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${service.gradient} rounded-bl-full blur-2xl group-hover:scale-110 transition-transform pointer-events-none`} />
 
                 <div>
+<<<<<<< HEAD
                   <div className="w-12 h-12 rounded-2xl bg-dark-800 border border-slate-700/60 flex items-center justify-center p-2.5 mb-6 group-hover:border-cyan-500/40 group-hover:scale-110 transition-all shadow-md">
                     <BrandIcon name={service.title} className="w-7 h-7 shrink-0" fallbackIcon={Icon} />
+=======
+                  <div className="p-3.5 rounded-2xl bg-dark-800 text-cyan-400 border border-slate-700/60 w-fit mb-6 group-hover:border-cyan-500/40 group-hover:scale-110 transition-all shadow-md">
+                    <Icon className="w-6 h-6" />
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
                   </div>
 
                   <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">

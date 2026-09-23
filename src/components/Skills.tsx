@@ -28,7 +28,10 @@ import {
 } from 'lucide-react';
 import { skillsData, skillCategories } from '../data/skills';
 import type { SkillCategory } from '../data/skills';
+<<<<<<< HEAD
 import { BrandIcon } from './BrandIcons';
+=======
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
 
 // Map icon string to component
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
@@ -137,8 +140,13 @@ export const Skills: React.FC = () => {
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="flex items-center gap-3">
+<<<<<<< HEAD
                       <div className="w-10 h-10 rounded-xl bg-dark-800/90 border border-slate-700/60 group-hover:border-cyan-500/40 group-hover:scale-105 transition-all flex items-center justify-center p-2 shrink-0 shadow-inner">
                         <BrandIcon name={skill.name} className="w-6 h-6 shrink-0" fallbackIcon={IconComponent} />
+=======
+                      <div className="p-2.5 rounded-xl bg-dark-800 text-cyan-400 border border-slate-700/60 group-hover:border-cyan-500/40 group-hover:scale-105 transition-all">
+                        <IconComponent className="w-5 h-5" />
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
                       </div>
                       <div>
                         <h3 className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">

@@ -1,5 +1,10 @@
 import React from 'react';
+<<<<<<< HEAD
 import { ArrowUp } from 'lucide-react';
+=======
+import { ArrowUp, Mail, Share2, Phone } from 'lucide-react';
+import { LinkedinIcon } from './SocialIcons';
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -15,6 +20,16 @@ export const Footer: React.FC = () => {
     { name: 'Services', href: '#services' },
     { name: 'Contact', href: '#contact' },
   ];
+<<<<<<< HEAD
+=======
+
+  const socialLinks = [
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/jerryvalera', icon: LinkedinIcon },
+    { name: 'Email', href: 'mailto:jerryvalera0823@gmail.com', icon: Mail },
+    { name: 'Phone', href: 'tel:+639162212837', icon: Phone },
+  ];
+
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
   return (
     <footer className="bg-dark-950 border-t border-slate-800/80 pt-16 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Subtle top glow line */}
@@ -26,12 +41,17 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-2 mb-2">
+<<<<<<< HEAD
               <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center p-1">
                 {/* Brand icon */}
                 <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none">
                   <circle cx="12" cy="12" r="10" stroke="#22d3ee" strokeWidth="1.5" />
                   <path d="M8 12h8M12 8v8" stroke="#22d3ee" strokeWidth="1.8" strokeLinecap="round" />
                 </svg>
+=======
+              <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                <Share2 className="w-4 h-4" />
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
               </div>
               <span className="font-extrabold text-xl tracking-tight text-white">
                 Jerry <span className="text-cyan-400">Valera</span>
@@ -60,6 +80,7 @@ export const Footer: React.FC = () => {
 
           {/* Socials & Back to Top */}
           <div className="flex items-center gap-3">
+<<<<<<< HEAD
             {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/jerryvalera"
@@ -96,6 +117,23 @@ export const Footer: React.FC = () => {
                 <path d="M8.5 7.5C8 7.5 7.5 8 7.5 8.5C7.5 13 11 16.5 15.5 16.5C16 16.5 16.5 16 16.5 15.5V14.2L14.5 13.2L13.5 14C12.2 13.3 10.7 11.8 10 10.5L10.8 9.5L9.8 7.5H8.5Z" fill="white" />
               </svg>
             </a>
+=======
+            {socialLinks.map((social) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target={social.href.startsWith('http') ? '_blank' : undefined}
+                  rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="p-2.5 rounded-xl bg-dark-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all"
+                  aria-label={social.name}
+                >
+                  <Icon className="w-4 h-4" />
+                </a>
+              );
+            })}
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
 
             <button
               onClick={scrollToTop}

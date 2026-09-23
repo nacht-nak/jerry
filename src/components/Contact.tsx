@@ -5,13 +5,21 @@ import {
   Mail,
   MapPin,
   Clock,
+<<<<<<< HEAD
   Phone,
   FileText,
+=======
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
   Copy,
   Check,
   Sparkles,
   MessageSquare,
   AlertCircle,
+<<<<<<< HEAD
+=======
+  Phone,
+  FileText,
+>>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
   Download
 } from 'lucide-react';
 import { LinkedinIcon } from './SocialIcons';
