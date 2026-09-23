@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   Send,
+  Mail,
+  MapPin,
+  Clock,
+  Phone,
+  FileText,
   Copy,
   Check,
   Sparkles,
@@ -9,6 +14,7 @@ import {
   AlertCircle,
   Download
 } from 'lucide-react';
+import { LinkedinIcon } from './SocialIcons';
 import confetti from 'canvas-confetti';
 
 export const Contact: React.FC = () => {
@@ -123,12 +129,8 @@ export const Contact: React.FC = () => {
                 {/* Email Item with copy */}
                 <div className="p-3.5 rounded-xl bg-dark-900 border border-slate-800 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-cyan-950/60 border border-cyan-500/20 flex items-center justify-center">
-                      {/* Gmail / Email Icon */}
-                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none">
-                        <rect x="2" y="4" width="20" height="16" rx="3" fill="#4285F4" />
-                        <path d="M2 7l10 6 10-6" stroke="white" strokeWidth="1.8" fill="none" strokeLinejoin="round" />
-                      </svg>
+                    <div className="p-2 rounded-lg bg-cyan-950/60 text-cyan-400 border border-cyan-500/20">
+                      <Mail className="w-4 h-4" />
                     </div>
                     <div>
                       <span className="text-[10px] text-slate-400 block">Email Address</span>
@@ -150,12 +152,8 @@ export const Contact: React.FC = () => {
                 {/* Phone Item with copy */}
                 <div className="p-3.5 rounded-xl bg-dark-900 border border-slate-800 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-emerald-950/60 border border-emerald-500/20 flex items-center justify-center">
-                      {/* WhatsApp / Phone Icon */}
-                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none">
-                        <circle cx="12" cy="12" r="10" fill="#25D366" />
-                        <path d="M8.5 7.5C8 7.5 7.5 8 7.5 8.5C7.5 13 11 16.5 15.5 16.5C16 16.5 16.5 16 16.5 15.5V14.2L14.5 13.2L13.5 14C12.2 13.3 10.7 11.8 10 10.5L10.8 9.5L9.8 7.5H8.5Z" fill="white" />
-                      </svg>
+                    <div className="p-2 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-500/20">
+                      <Phone className="w-4 h-4" />
                     </div>
                     <div>
                       <span className="text-[10px] text-slate-400 block">Phone / Mobile</span>
@@ -177,13 +175,8 @@ export const Contact: React.FC = () => {
                 {/* LinkedIn Item */}
                 <div className="p-3.5 rounded-xl bg-dark-900 border border-slate-800 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-blue-950/60 border border-blue-500/20 flex items-center justify-center">
-                      {/* LinkedIn Logo */}
-                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none">
-                        <rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2" />
-                        <path d="M7.5 10v6.5M7.5 7.5v.01" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
-                        <path d="M10.5 16.5V12.5C10.5 11.1 11.6 10 13 10C14.4 10 15.5 11.1 15.5 12.5V16.5" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                      </svg>
+                    <div className="p-2 rounded-lg bg-blue-950/60 text-blue-400 border border-blue-500/20">
+                      <LinkedinIcon className="w-4 h-4" />
                     </div>
                     <div>
                       <span className="text-[10px] text-slate-400 block">LinkedIn Profile</span>
@@ -201,12 +194,8 @@ export const Contact: React.FC = () => {
 
                 {/* Location Item */}
                 <div className="p-3.5 rounded-xl bg-dark-900 border border-slate-800 flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-indigo-950/60 border border-indigo-500/20 flex items-center justify-center">
-                    {/* Google Maps Pin */}
-                    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335" />
-                      <circle cx="12" cy="9" r="2.5" fill="white" />
-                    </svg>
+                  <div className="p-2 rounded-lg bg-indigo-950/60 text-indigo-400 border border-indigo-500/20">
+                    <MapPin className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="text-[10px] text-slate-400 block">Location</span>
@@ -216,13 +205,8 @@ export const Contact: React.FC = () => {
 
                 {/* Availability Badge */}
                 <div className="p-3.5 rounded-xl bg-emerald-950/20 border border-emerald-500/30 flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-emerald-900/40 border border-emerald-500/40 flex items-center justify-center relative">
-                    {/* Green status / availability icon */}
-                    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none">
-                      <circle cx="12" cy="12" r="10" fill="#10B981" />
-                      <circle cx="12" cy="12" r="5" fill="none" stroke="white" strokeWidth="2" />
-                      <circle cx="12" cy="12" r="1.5" fill="white" />
-                    </svg>
+                  <div className="p-2 rounded-lg bg-emerald-900/40 text-emerald-400 border border-emerald-500/40">
+                    <Clock className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="text-[10px] text-emerald-400 font-bold block">Current Status</span>
@@ -240,11 +224,7 @@ export const Contact: React.FC = () => {
                   className="w-full flex items-center justify-between p-3 rounded-xl bg-dark-900 hover:bg-dark-800 border border-slate-700/80 text-xs font-semibold text-slate-200 hover:text-cyan-300 transition-colors"
                 >
                   <div className="flex items-center gap-2">
-                    {/* PDF Icon */}
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 shrink-0" fill="none">
-                      <rect x="3" y="1" width="18" height="22" rx="3" fill="#E53935" />
-                      <path d="M7 7h10M7 11h10M7 15h6" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
+                    <FileText className="w-4 h-4 text-cyan-400" />
                     <span>Download Official Portfolio PDF (11 Pages)</span>
                   </div>
                   <Download className="w-4 h-4" />
@@ -257,14 +237,8 @@ export const Contact: React.FC = () => {
                   className="w-full flex items-center justify-between p-3 rounded-xl bg-dark-900 hover:bg-dark-800 border border-slate-700/80 text-xs font-semibold text-slate-200 hover:text-cyan-300 transition-colors"
                 >
                   <div className="flex items-center gap-2">
-                    {/* Resume/CV Icon */}
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 shrink-0" fill="none">
-                      <rect x="3" y="1" width="18" height="22" rx="3" fill="#6366F1" />
-                      <circle cx="12" cy="8" r="2.5" fill="white" />
-                      <path d="M8 15c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-                      <path d="M7 19h10" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
-                                     <span>Download Curriculum Vitae (Resume)</span>
+                    <FileText className="w-4 h-4 text-indigo-400" />
+                    <span>Download Curriculum Vitae (Resume)</span>
                   </div>
                   <Download className="w-4 h-4" />
                 </a>
