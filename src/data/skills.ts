@@ -31,11 +31,7 @@ export const skillsData: Skill[] = [
   {
     name: 'Short-Form Video & Reels',
     category: 'Social Media',
-<<<<<<< HEAD
     proficiency: 98,
-=======
-    proficiency: 90,
->>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
     level: 'Advanced',
     experienceYears: '2+ yrs',
     iconName: 'Video',
@@ -64,11 +60,7 @@ export const skillsData: Skill[] = [
   {
     name: 'Google Ads Campaigns',
     category: 'Paid Search',
-<<<<<<< HEAD
     proficiency: 98,
-=======
-    proficiency: 90,
->>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
     level: 'Advanced',
     experienceYears: '2+ yrs',
     iconName: 'Zap',
@@ -77,13 +69,8 @@ export const skillsData: Skill[] = [
   {
     name: 'Bing Ads & Microsoft Advertising',
     category: 'Paid Search',
-<<<<<<< HEAD
     proficiency: 92,
     level: 'Advanced',
-=======
-    proficiency: 86,
-    level: 'Proficient',
->>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
     experienceYears: '2+ yrs',
     iconName: 'Search',
     description: 'Configuring Bing search network campaigns, keyword bidding strategies, and audience demographic targeting'
@@ -91,11 +78,7 @@ export const skillsData: Skill[] = [
   {
     name: 'Remarketing & Retargeting Ads',
     category: 'Paid Search',
-<<<<<<< HEAD
     proficiency: 95,
-=======
-    proficiency: 88,
->>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
     level: 'Advanced',
     experienceYears: '2+ yrs',
     iconName: 'Layers',
@@ -104,11 +87,7 @@ export const skillsData: Skill[] = [
   {
     name: 'Landing Page Lead Optimization',
     category: 'Paid Search',
-<<<<<<< HEAD
     proficiency: 95,
-=======
-    proficiency: 90,
->>>>>>> 884248561d217239184c3d1f04129fcab9aa5c17
     level: 'Advanced',
     experienceYears: '2+ yrs',
     iconName: 'Layout',
